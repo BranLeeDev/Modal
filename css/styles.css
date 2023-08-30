@@ -22,6 +22,18 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
+}
+.content-layout__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 20em;
+  width: 100%;
+  max-width: 125em;
+  min-height: 30em;
+  height: 100%;
+  max-height: 100em;
   background-image: url("https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/JavaScript%20Vanilla/Modal/a9tmrgsezgsmyjigya7d");
   background-position: center;
   background-repeat: no-repeat;
@@ -34,8 +46,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40em;
-  height: 20em;
+  width: 90%;
+  max-width: 40em;
+  height: 45%;
+  max-height: 20em;
   border-radius: 0.5em;
   box-shadow: 0em 0.3em 0.5em rgba(0, 0, 0, 0.377);
   overflow: hidden;
@@ -101,8 +115,12 @@ body {
 .main__modal-background {
   position: fixed;
   z-index: 0;
+  min-width: 20em;
   width: 0%;
-  height: 0vh;
+  max-width: 125em;
+  min-height: 30em;
+  height: 0%;
+  max-height: 100em;
   background-color: var(--first-color);
   opacity: 0;
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
@@ -111,7 +129,7 @@ body {
 
 .main__modal-background--active {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--third-color);
   opacity: 0.7;
 }
@@ -135,4 +153,48 @@ body {
 .modal__description {
   font-size: 2rem;
   color: var(--second-color);
+}
+
+@media screen and (width <= 641px) {
+  .main__content {
+    height: 37.5%;
+  }
+
+  .content__title {
+    font-size: 3rem;
+  }
+
+  .content__button-open {
+    font-size: 1.1rem;
+  }
+
+  .modal__button-close {
+    font-size: 1.35rem;
+  }
+
+  .modal__description {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (width <= 442px) {
+  .main__content {
+    height: 30%;
+  }
+
+  .content__title {
+    font-size: 2rem;
+  }
+
+  .content__button-open {
+    font-size: 1rem;
+  }
+
+  .modal__button-close {
+    font-size: 1.2rem;
+  }
+
+  .modal__description {
+    font-size: 1.6rem;
+  }
 }
