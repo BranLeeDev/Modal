@@ -15,9 +15,36 @@
       type="image/ico"
       href="https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/JavaScript%20Vanilla/Modal/gyuhvgztg1kgicur6gff"
     />
+    <!-- CDN font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Styles -->
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
+    <div class="content-layout">
+      <main class="content-layout__main">
+        <section class="main__content">
+          <h1 class="content__title">Modal Project</h1>
+          <button class="content__button-open">Open Modal</button>
+        </section>
+        <div class="main__modal">
+          <button class="modal__button-close">
+            <i class="fa-solid fa-x modal-close__icon"></i>
+          </button>
+          <p class="modal__description">Modal Content</p>
+        </div>
+      </main>
+    </div>
     <script src="/js/scripts.js" defer></script>
   </body>
 </html>
