@@ -32,7 +32,7 @@ body {
   width: 100%;
   max-width: 125em;
   min-height: 30em;
-  height: 100%;
+  height: 100vh;
   max-height: 100em;
   background-image: url("https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/JavaScript%20Vanilla/Modal/a9tmrgsezgsmyjigya7d");
   background-position: center;
@@ -119,7 +119,7 @@ body {
   width: 0%;
   max-width: 125em;
   min-height: 30em;
-  height: 0%;
+  height: 0vh;
   max-height: 100em;
   background-color: var(--first-color);
   opacity: 0;
@@ -129,7 +129,7 @@ body {
 
 .main__modal-background--active {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--third-color);
   opacity: 0.7;
 }
