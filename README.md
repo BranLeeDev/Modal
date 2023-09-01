@@ -11,7 +11,7 @@ Un modal sencillo creado con HTML, CSS y JavaScript. Se sigue el enfoque de dise
 
 ## Enlace de la pagina web
 
-[Counter](https://modal-kappa.vercel.app/)
+[Modal](https://modal-kappa.vercel.app/)
 
 ## Vista previa
 
